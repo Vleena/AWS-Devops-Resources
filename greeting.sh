@@ -12,5 +12,8 @@ echo "Hello, $(whoami) user"
 read -p "Enter the directory path to list:" name
 ls $name
 
+#present the present working directory
+echo "Present working directory is: $(pwd)"
+
 
 
