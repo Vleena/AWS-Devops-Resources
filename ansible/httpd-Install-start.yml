@@ -1,0 +1,16 @@
+---
+- name: Install the httpd web server and start it
+  hosts: all
+  become: true
+  become_user: root
+
+  tasks:
+  - name: Install the httpd
+    yum:
+     name: httpd
+     state: present
+  - name: Start the httpd
+    service:
+     name: httpd
+     state: started
+
