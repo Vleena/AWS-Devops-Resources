@@ -2,7 +2,7 @@
 
 ##########################
 # Author: Vleena
-# Description: create a one directory, inside which 4 direcories with 777 permission
+# Description: create a one directory, inside which 4 direcories and one read.me file with 777 permission
 # version: v1
 ###########################
 # set -x
@@ -23,6 +23,8 @@ read -p "Enter the 3nd child directory name: " c2
 read -p "Enter the 4nd child directory name: " c3
 
 mkdir $c1 $c2 $c3
+
+touch read.me
 
 cd ..
 chmod -R 777 $p
